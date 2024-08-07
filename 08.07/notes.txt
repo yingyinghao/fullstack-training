@@ -1,0 +1,56 @@
+->HTML: IT is used to create webpage or layout.
+->Next session
+->Styles (css)
+
+->Hyperlink: It is a process to navigate one page intto another.
+<a> anchor tag
+
+
+
+
+->comment: to describe the code (hide the code)
+
+<!-- -->
+->table: collection of row and column
+
+<table> tag:width, height, border, cellpadding, cellspacing
+  ->row
+    <tr></tr>
+  ->column
+    <td></td> or <th></th>
+      -> clospan
+      -> rowspan
+
+
+->render audio, video etc
+  -><audio> tag
+  -><video> tag
+  when you want to render the youtube url : change the watch-> ebed
+
+
+-->Types of elements
+->Block and Inline elements
+  ->Block Elements: They start on a new line and take up the full width of their container
+  like <p> <h1>to<h6>,<div>,<ul> etc and they are used to structrue the main
+  content od a web page.
+  ->Inline Elements: They don't start with a new line and only takeup as much width as necessary
+  example<a> <span><label><img> etc
+  they are used with bolck-level elements to style or format specific part of the content
+
+  eg:
+  <div>
+    Hello guys! <span style="color:red"> how r u?</span>.
+    </div>
+
+    ->div tag: It is a division tag which is used to divide our application into multiple section.
+    with the help of it we create sections in our web page and put the content.
+    they are manage with the help of styles. It is a block level element.
+
+html 5 semantic tags: It clearly describes its meaning(readable).
+->we can easily understand the code
+<main> <header> <nav><section><aside><ariticle><footer><figure><mark><summary>
+
+
+->Next Session
+->Forms
+->Styles
