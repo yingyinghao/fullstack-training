@@ -1,0 +1,103 @@
+---> Fullstack JavaScript Training
+ -> FrontEnd
+  Html5
+  Css3
+  Bootstrap
+  JavaScript
+    vanilla JavaScript
+    EcmaScript 6/7/8/9/10 2024
+  React JS
+->Backend
+  Node JS
+  Express Js(Rest API)
+->Database
+  MongoDB
+  MySql
+
+->Fullflashed web application
+ -> Adminpanel
+  ->role based authentication(JWT)
+
+
+
+
+->HTML: It is used to create webpage or layout.
+  ->latest version is Html5
+  ->It is not a case sensitive language
+  -> extension .html or .htm
+  -> everything is write on tags
+  -> tag < >
+  -> Every tag must be close
+  <br> <br />
+  <hr> <hr />
+  -> structure of html
+  <!Doctype html>
+  <html>
+    <head>
+    //we define title, meta tags, styles, scripts
+    </head>
+    <body>
+    //we create whole web page
+    </body>
+  </html>
+  -> Head Section
+  -> title tag: it is used to define title in a title bar,
+  it is used fot seo purpose.
+  SEO: Search Engine Optamization(Digital Marketing)
+
+  -> meta tags: used for Search Engine Optamization(Digital Marketing)
+  <meta type="keywords" content=".." />
+  <meta type="description" content="--"/>
+  ->style: Css
+  ->script: JavaScript
+  -body Section
+  -> main section of html where we create our whole web layout
+  ->heading tags h1 to h6
+  ->install extension in vscode
+  ->liveserver
+  ->paragraph <p></p>
+  -><br /> new line
+  -><hr /> horizontal line
+  <b></b> <i></i>
+  ->superscript <sup></sup>
+  ->subscript <sub></sub>
+
+  ->&copy; : copyright symbol
+  ->how we insert image in a web page
+  <img src="path" alt="/>
+
+
+  --> list in html : collection of items
+  -> ordered(numbered) <ol>
+  1 2 3(default)
+  -> Unordered List <ul>
+  disc (default)
+  circle
+  square
+
+
+
+
+  ->Task
+    -> nested list
+    i.Courses (ol)
+      . React(ul)
+      . Node
+      . Augular
+    ii Duration
+      .one month
+      .one month
+      .one month
+
+
+  -> Next session
+    ->Hyperlink
+    ->Tables
+    ->Audio/video tags
+    ->Inline vs Block label elements
+    ->Div
+    ->Forms
+    ->Html 5 new semantic tags
+
+    ->Styles(CSS)
+
