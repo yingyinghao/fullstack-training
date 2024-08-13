@@ -1,0 +1,13 @@
+->Form: collection of fields like textbox, radio button, checkbox etc
+
+<form></form>
+
+->attributes
+name="f1"
+id="f1"
+method="get|post" (by default get)
+action="url"
+->difference between get and post
+->get is unsecured method because it display form filed values in the URL
+->post is secured method, send data to server in secure format and we can send
+up to large data.

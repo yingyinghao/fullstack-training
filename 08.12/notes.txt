@@ -1,0 +1,20 @@
+->BoxModel:
+width
+height
+margin:outside the border
+margin: top right bottom left
+margin: 10px 0px 20px 30px;
+margin-top: 20px;
+margin: 20px 10px(20: t/b) (10: r/l)
+padding: inside the border
+
+
+
+-> create a layout with the help of div tag
+  ->div is a block level element
+  <div></div>
+
+  ->divide containers in one row
+  ->in old way we are using float property
+  float: left | right | none
+  *** when we use a float

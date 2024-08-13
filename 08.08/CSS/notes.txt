@@ -1,0 +1,80 @@
+-> stylesheet : are used to apply attractive formating in our webpage like look and appearance of the page.
+   -> Types of stylesheet
+      1. Inline : call in any tag with style attribute
+         eg:
+           <p style="color:'green' ; text-align:'center'"> ---- </p>
+      2. Internal (embedded) : are define in head section in style tag
+         <head>
+            <style>
+               h2{
+                 color:'purple',
+                 text-align :'center'
+               }
+               p{
+                color:'green',
+                font-size:20px
+               }
+            </style>
+        </head>
+      3. External (CSS) : cascading style sheet. first we create a css file and define the styles and then link in our webpage in head section with the help of link tag
+         eg:
+           style.css
+             h2{
+                 color:'purple',
+                 text-align :'center'
+               }
+               p{
+                color:'green',
+                font-size:20px
+               }
+        home.html
+        <html>
+           <head>
+              <link rel="stylesheet" href="./style.css" />
+           </head>
+           <body>
+             ---
+             --
+          </body>
+        </html>
+
+      inline ----> internal ----> external
+      syntax :
+        selector{property : value}
+        eg:
+        p{ color:'red' }
+
+   --> Css selectors
+      -> element selector
+         h1{---}
+      -> id selector : to define with hash(#) sign with idname and call in any tag with id attribute (id is unique within a page)
+         eg:
+         #main{
+            //define styles
+         }
+         <div id="main">
+           --
+         </div>
+     -> class selector : to define with dot(.) sign with className and call in any tag with class attribute
+        eg:
+         .error{
+            //define styles
+         }
+         <div class="error">
+           --
+         </div>
+     -> Css Universal Selector (*) : It select all the elements of a web page
+        *{
+            styles
+        }
+    -> grouping selectors
+      h1 , h2 , h3{
+          text-align: center
+      }
+
+      -> CSS Properties
+        ** task -->  Color ,Background , Fonts , Text , Links , Lists , table
+         BoxModel , Border , Margin , Padding
+         display , position , float, Opacity
+         Flexbox , Grid , Animations , Transforms , Box-Sizing
+         Media Query (Responsive design)

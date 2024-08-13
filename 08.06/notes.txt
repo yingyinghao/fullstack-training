@@ -59,45 +59,45 @@
   -><br /> new line
   -><hr /> horizontal line
   <b></b> <i></i>
-  ->superscript <sup></sup>
-  ->subscript <sub></sub>
+->superscript <sup></sup>
+->subscript <sub></sub>
 
-  ->&copy; : copyright symbol
-  ->how we insert image in a web page
-  <img src="path" alt="/>
-
-
-  --> list in html : collection of items
-  -> ordered(numbered) <ol>
-  1 2 3(default)
-  -> Unordered List <ul>
-  disc (default)
-  circle
-  square
+->&copy; : copyright symbol
+->how we insert image in a web page
+<img src="path" alt="/>
 
 
+--> list in html : collection of items
+-> ordered(numbered) <ol>
+1 2 3(default)
+-> Unordered List <ul>
+disc (default)
+circle
+square
 
 
-  ->Task
-    -> nested list
-    i.Courses (ol)
-      . React(ul)
-      . Node
-      . Augular
-    ii Duration
-      .one month
-      .one month
-      .one month
 
 
-  -> Next session
-    ->Hyperlink
-    ->Tables
-    ->Audio/video tags
-    ->Inline vs Block label elements
-    ->Div
-    ->Forms
-    ->Html 5 new semantic tags
+->Task
+  -> nested list
+  i.Courses (ol)
+    . React(ul)
+    . Node
+    . Augular
+  ii Duration
+    .one month
+    .one month
+    .one month
 
-    ->Styles(CSS)
+
+-> Next session
+  ->Hyperlink
+  ->Tables
+  ->Audio/video tags
+  ->Inline vs Block label elements
+  ->Div
+  ->Forms
+  ->Html 5 new semantic tags
+
+  ->Styles(CSS)
 
