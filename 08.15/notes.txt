@@ -1,0 +1,15 @@
+-> Bootstrap 5 : It is an front-end framework for faster and easier responsive web design or development.
+It includes HTML and CSS design templates for creating common UI Components like forms , buttons, navigations , alerts , modals , tabs etc.
+  -> here we have inbuild classes , with the help of it we can create our layout very easily and fastly.
+  -> If we create a layout it is responsive.
+  -> How we use bootstrap
+     -> we need to link bootstrap css and js file in our web page
+     https://getbootstrap.com/docs/5.0/getting-started/introduction/
+
+     -> Bootstrap is work on 12 grid system
+        -> 1 row we divide into 12 columns.
+        -> if we want to divide into grid we have row and container class
+           <div class="container">
+              <div class="row">
+              </div>
+           </div>
