@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Js Program</title>
+    </head>
+    <body>
+        <h2> JavaScript array Implementation</h2>
+        <script>
+            let arr=[];
+            let sum=0;
+            let largest=0;
+            //input 5 values in an array 
+            for(let i=0; i<5;i++){
+                arr[i]=parseInt(prompt(`Enter ${i+1} value`))
+            }
+            //display 
+            for(let i=0; i<arr.length;i++){
+                console.log(arr[i]);
+                sum+=arr[i];
+                if(largest <arr[i] ){
+                    largest=arr[i]
+                }
+            }
+            console.log(`The sum is ${sum} and the largest value is ${largest}`)
+        </script>
+    </body>
+</html>

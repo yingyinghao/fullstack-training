@@ -1,0 +1,146 @@
+--> JavaScript : It is an client side scripting language which is used to apply some dynamic contents in our web page like some animations , event handling , validations , dom manupulation etc.
+Before node js JavaScript work on the browser thats why it is client side language.
+But when node js is introduced then JavaScript is used outside the browser so it is server side.
+-> JavaScript is work on EcmaScript Standard (ES )
+-> Old JavaScript (Vanilla JavaScript) (Es 5)
+-> new features (new version) (Es 2015/2016) : es 6 , 7 , ...
+-> It is case sensitive 
+-> How JavaScript code is executed in a browser
+   -> In every browser there is an JavaScript engine , which transpile the JavaScript code and return a machine readable code.
+      -> Chrome : V8 Engine 
+      -> Firefox : Spider Monkey 
+-> extension of JavaScript is .js 
+-> We link the js file to our web page to execute 
+  <script> tag : we can write JavaScript within script tag 
+-> How we implement JavaScript 
+    -> Internal Way 
+      home.html 
+      <html>
+      <head>
+         <title> Js </title>
+      </head>
+      <body>
+         <h2> JavaScript </h2>
+         <script>
+           JavaScript code  
+         </script>
+      </body>
+      </html>
+    -> external way 
+       script.js 
+         JavaScript code 
+        home.html 
+      <html>
+      <head>
+         <title> Js </title>
+      </head>
+      <body>
+         <h2> JavaScript </h2>
+         <script  src="./script.js"> </script>
+      </body>
+      </html>
+    -> JavaScript is programming language 
+       -> Comments : to describe the code 
+          -> single : // 
+          -> multiple : /*  */
+       -> Concatenation : + 
+       -> How we render dynamic data 
+          -> document.write("--");//display in a browser 
+          -> ** console.log("--");//display in console // debug //all errors are show in console 
+       -> Variables : are the temporary memeory location which hold input data.
+          -> Rules to define variables 
+              -> start with [a-zA-Z] or[_] or [$]
+              -> after it combination of [a-zA-Z0-9_]
+       -> Vanilla JavaScript (Old Js)
+           var varname=value;
+           eg:
+           var empName="anuj";
+           var emp_salary=45688;    
+       -> in es6 JavaScript introduced let and const keyword 
+          -> let keyword : blocked scope , define local variable . Available within a block only.
+            eg:
+            {
+            let empName="john";  
+            }
+            console.log(empName);//not accessable 
+          -> const keyword : to define constant (fixed and permanent) (blocked scope)
+             const API="http://api.com/products"; 
+        -> Datatype : allocated at runtime as per the variable value.
+           -> number , string , boolean , null , object , array , undefined ,bigint , symbol etc  
+           -> typeof variablename : to find the datatype if a variable 
+        -> Operators 
+           -> arthematic : + , - , / ,*,%,++,--
+           -> assignment : = , += , -= , ..
+           -> relations : > , < , >= , <=
+           -> logical : && , || , ! 
+           -> comparison : == ,!= , === , !== 
+               == : only compare value
+               (*)=== : compare both value and type 
+           -> ternary operator (Conditional operators)
+              (condition ? true : false)
+        -> Conditions 
+           if else , ifelseif else , nested if , switch case 
+        -> looping 
+           for ,while , do while 
+        -> functions 
+        -> array 
+    -> How we input data in JavaScript 
+      -> prompt() : to input data at runtime . It accept value in string . To convert string into number 
+         parseInt()
+      -> alert() : to display message in dialoage box 
+      -> confirm() : for confirmation
+    -> Examples 
+       -> if else : find even/odd of a given number 
+    *** -> Template literal | String Templates | Template Strings : within back-ticks (``) we can render string and a variable together 
+      eg:
+      let x=10;
+      let y=20;
+      let sum=x+y;
+      console.log(`The sum of ${x} and ${y} is ${sum}`)
+
+    -> Tasks 
+       -> DO 1,1 examples of if elseif else , nested if and switch 
+    -> Looping (Iteration)
+       -> for loop : 
+          for(init ; condition ; inc/dec){
+             statement;
+          }
+    -> Task 
+       -> example of while and do while 
+
+    -> functions : for reusability 
+       -> inbuild 
+       -> userdefine : created by the user 
+           syntax :
+             function functionName(){
+
+             }
+             or 
+             //expression 
+             const functionName=function(){
+
+             }
+             or 
+             //arrow function : code is sort and concise (es 6)
+             const functionName=()=>{
+
+             }
+            -> to call a function 
+              functionName();
+
+        -> Array : is an group of element having different types. in a single variable we can store any type of values.
+           syntax :
+             let arr=[val,val,val,...];
+                arr[0];
+                -> find length of the array 
+                  arrname.length 
+                  for(let i=0; i<arr.length ; i++){
+                     arr[i]
+                  }
+            -> Examples 
+               -> Input 5 values in an array , display all and find the sum and the largest value from an array.
+
+    -> Tomorrow 
+       -> Event Handling 
+       -> Predefine functions (array , string , Math , date)
+       -> DOM Part 
