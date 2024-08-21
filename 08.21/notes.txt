@@ -1,0 +1,16 @@
+->DOM-> stand for document object model. It is an API
+with the help of it we can manupulate the elements of the webpage.
+like addekements update data in elements, delete elements etc.
+Javascript is used for runtime DOM manupulation.
+
+
+->All the elements are in a tree format(node)
+->selecting elements
+document.getElementById("id") get a unique element
+document.getElementByName() return array
+document.getElementByTagName() return array
+document.getElementByClassName(): return array
+->manipulation
+createElement: to create a element
+innerHtml: to get and set html content
+texteContent: to get and set

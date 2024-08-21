@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Dom example</title>
+    </head>
+    <body>
+        <h2> Dom createelement example</h2>
+         <ul id="menu"></ul>
+        <button id="btn"> Perform</button>
+        <script>
+            //get a button and menu 
+            let btn=document.getElementById("btn");
+            let menu=document.getElementById("menu");
+            //add click event in the button 
+            btn.addEventListener("click",function(){
+               let categories=["mens","womens","kids"];
+               categories.forEach(cat=>{
+                  let li=document.createElement("li");//create li element
+                  li.textContent=cat;//add content in li 
+                  menu.appendChild(li);//appent li in menu
+               })
+            })
+        </script>
+    </body>
+</html>

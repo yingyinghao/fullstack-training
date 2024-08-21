@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Dom example</title>
+    </head>
+    <body>
+        <h2> Dom example first</h2>
+        <p id="target"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, reiciendis? Rerum eum iusto, obcaecati possimus accusantium architecto qui soluta aspernatur rem odio dolorem eius ducimus facere expedita quibusdam cupiditate natus.</p>
+        <button id="btn"> Perform</button>
+        <script>
+            //get a button and para 
+            let btn=document.getElementById("btn");
+            let para=document.getElementById("target");
+            //add click event in the button 
+            btn.addEventListener("click",function(){
+                //get data from para 
+                let data=para.innerHTML;
+                alert(data)
+                //set data to para 
+                para.innerHTML="Hello we are learning JavaScript!";
+                //apply dynamic styles
+                para.style.color="green"
+            })
+        </script>
+    </body>
+</html>

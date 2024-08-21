@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Js Program</title>
+    </head>
+    <body onload="changeBgColor('purple')">
+        <h2> JavaScript Events Implementation</h2>
+        <button onclick="changeBgColor('red')" onmouseover="changeBgColor('green')" onmouseout="changeBgColor('white')"> Change BgColor</button>
+        <script>
+            function changeBgColor(val){
+                document.bgColor=val;
+            }
+        </script>
+    </body>
+</html>
