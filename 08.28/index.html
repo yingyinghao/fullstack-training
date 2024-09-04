@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <main class="container">
+    <h1>Product Crud Application</h1>
+    <a href ="./addproduct.html" class="'btn btn-danger">Add Product</a>
+    <div class="row" id="target"></div>
+    </main>
+    <script>
+      (async () => {
+          const URL = "http://localhost:3001/products";
+          const target = document.getElementById
+          try {
+            let res = await fetch(URL);
+            let data = await res.json();
+            let str = "";
+            data.forEach(pro => {
+              str +=`
+
+            <div class='col-sm-4'>
+            <div class='card'>
+              <h4> ${pro.name}</h4>
+              <p>price: Rs.${pro.price}<br/>
+                Quantity: ${pro.quantity}</p>
+                <p>button class='btn btn-danger' onClick='delPro(${pro.id})'>Delete
+                  </button></p>
+                  </div>
+                  </div>`;
+                })
+                target.innerHTML = str;
+              }
+              catch(err){
+                console.log("Error:" +err);
+              }
+            })();
+
+    async function delPro(id) {
+      if (confirm("Do u want to delete ?")) {
+        try {
+          let res = await fetch(`${URL}/${id}`, { method: 'DELETE' });
+          let data = await res.json();
+          alert("Product Deleted");
+          window.location.reload();
+        }
+        catch (err) {
+                console.log("Error : " + err)
+              }
+            }
+          }
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    </body>
+
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+how we apply styles in react js
+->inline styles
+<p style={{color:'red'}}>haha</p>
+call class: we call class with className
+<div className="container>
+--
+</div>
+
+->How we integrate bootstrap in react Js
+->1st way
+  ->link cdn files (css and js files) in index.html
+->2nd way install bootrap
+ npm i bootstrap --save
+ ->index.js
+ import "bootstrap/dist/css/bootstrap.min.css";
+ import "bootstrap/dist/js/bootstrap.bundle";
+
+-> *** Routing: It is a process to navigate one route to
+another within a single page.
+->for routing we have react router package(v6)
+ npm i react-router-dom --save
+ -> in react router we gave some inbuild Components
+ ->routes: it is a container where we define all route
+
+ Route: here we define path, when a path is match with the url
+ then a component in render in the dom
+ eg:
+ <Route>
+    <Route path="" element = {<Home/>}/>
+    <Route path="" element = {<About/>}/>
+ </Route>
+
+ ->Link: for hyperlink
+ <Link to ="/about">About us </Link>
+
+ ->outlet: used to render child or nested Components
+
+ ->layout
+ Home About us Counter Gallery Contact us
+ <section>
+ //load dynamic Components
+ </section>

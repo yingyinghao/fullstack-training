@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interval Example</title>
+</head>
+<body>
+  <h2>Stop Watch</h2>
+  <p id="timer"></p>
+  <button id="start">start</button>
+  <button id="stop">stop</button>
+  <script>
+    let start=document.getElementById('start')
+    let stop = document.getElementById('stop')
+    let timer = document.getElementById('timer')
+
+    count=0;
+    function counter(){
+      counter++;
+      timer.innerHTML=count;
+    }
+    start.addEventListener('click',()=>{
+
+    })
+  </script>
+</body>
+</html>

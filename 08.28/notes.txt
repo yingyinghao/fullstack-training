@@ -1,0 +1,7 @@
+->Async/Await: It is used handling asunchous operations using promises.
+
+->if we put async keyword before the function then it return promises
+->await keyword is used to wait for a promise to resolve
+
+-> curd application in js with the help of json-server
+->json-server: it is a node module

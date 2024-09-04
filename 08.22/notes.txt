@@ -1,0 +1,29 @@
+->Object:
+is used to store data(propoties and method) in the
+key-value format.
+
+let objectName = {
+  key: value,
+  key, value..
+}
+
+eg: let person = {
+  firstName: 'John',
+  lastName: 'sena',
+  fullname: function(){
+    return this.firstName + " "+this.lastName;
+  }
+}
+console.log(person.firstName);
+console.log(person.fullName);
+
+
+->Interval
+->setTimeout: call a method or expression after a certain interval of time(only one time)
+eg:
+setTimeout(xuz,4000);//call xyz after 4 getSeconds
+
+->setInterval:call regularlly after a certain interval of time
+interval=setTnterval(xyz,3000);//call xyz in every 3 seconds
+->clearInterval
+clearInterval(interval);
