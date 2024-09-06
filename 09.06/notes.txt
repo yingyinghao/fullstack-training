@@ -1,0 +1,269 @@
+> React Js :- It is an open-source , cross-platform Javascript library which is used to develop User Interface (UI) (Front-end)
+  -> It is known as View Layer (presentation layer) of the application.
+  -> It is maintained by facebook
+  -> With the help of react we can develop SPA (Single Page Application)
+
+  -> Features of React Js
+     -> Component based architecture
+     -> use JSX (Javascript syntax extension) : we can use html within Javascript. the code is more readable and clear.
+       *** browser doesn't support JSX so in react we have babel transpilar which transpile the jsx code and convert into js code.
+     -> Virtual DOM concept : when a app is loaded first time vDOM take a copy of the real dom. Then if there is any update in a UI then it compare with the Vdom copy then only the update things are re-render in the reacl DOM . Thats why the reason the perform of application is fast.
+    -> Installation or environmental setup
+       -> first we need a node js environment
+         -> download and install node js
+        ->How we check node is install or not
+           -> open cmd or terminal
+              node -v
+           -> How we create react application
+              npx create-react-app appname
+              or
+              npm create vite@latest appname
+
+        -> How we run react app
+           -> open app in cmd
+             npm start (3000)
+
+    -> Folder or directory structure
+      -> node_modules : It holds react packages which are used to develop react application.(3rd party packages)
+      -> public : in that folder we store assets file
+         -> index.html : it is a main html file which is executed when react app run.
+      -> src : It stores in all the files and components used in our react application
+           index.js : main entry point Javascript file of react js
+           App.js : Default component
+           App.css
+           App.test.js
+           index.css : main css file
+      -> package.json : define the dependencies of the react project uses
+      -> package-lock.json : locks the versions of dependencies our project uses.
+
+      --> How react application is boot or execute
+
+      index.html
+    <div id="root"></div>
+       ---> boot ---> src/index.js --> get the id root from index.html and load App component (src/app.js) in the div of index.html
+
+    ->  Next Session
+       -> Component
+           -> Class
+           -> Function
+       -> Dynamic Data Binding
+          -> expression
+          -> map
+          -> conditional rendering
+       -> props and states
+
+   -> Component : are the core building block of a react application. They are used for reusability. With the help of it we can seperate our UI into small piaces of code.
+      -> type of component
+         -> Class Component : used before react 16.8 version.
+         -> Function Component
+             -> component name start from capital letter
+             syntax :
+                function ComponentName(){
+                  //logic
+                  return(
+                     <div>
+                       //ui
+                     </div>
+                  )
+                }
+                or
+                const ComponentName=function(){
+                    //logic
+                  return(
+                     <div>
+                       //ui
+                     </div>
+                  )
+                }
+               or
+               const ComponentName=()=>{
+                   //logic
+                  return(
+                     <div>
+                       //ui
+                     </div>
+                  )
+               }
+            eg:
+            const Home=()=>{
+    return (
+        <div>
+            <h2> Home Page</h2>
+        </div>
+    )
+}
+export default Home;
+  -> How we use component in another component
+    App.js
+      import Home from "./path";
+      <Home />
+
+   -> Dynamic Data Rendering
+      -> expression { }
+      eg:
+        Home.jsx
+          const title="My Home Page";
+
+          <h3> {title} </h3>
+         eg:
+         const Home=()=>{
+    const title="My Home Page";
+    const obj={name:"sumit",age:35};
+    return (
+        <div>
+            <h2> {title}</h2>
+            <p> {obj.name} is {obj.age} year old</p>
+        </div>
+    )
+}
+export default Home;
+  -> How we render array or object
+     -> map() method
+     eg:
+     const courses=["Angular","React","Node"];
+
+      <ul>
+         {courses.map((val,ind)=>
+            <li key={ind}> {val} </li>
+         )}
+      </ul>
+   -> Conditional Rendering : when we want to render something based on some condition.
+      -> Logical && operator ()
+         { condition && statement}
+         eg:
+         {errMsg!="" && <p> {errMsg} </p>}
+      -> Ternary operator
+         (condition ? true : false)
+         eg:
+           {courses.length>0 ? display all courses : no courses}
+
+      -> props (property) : are used to pass data from parent component to child component. props are read only.
+        -> Props are pass as an attribute in a component
+          eg:
+            App.js
+              const heading="Ecommerce Project";
+              const category=["mens","womens","kids"];
+              <About heading={heading} category={category}/>
+            -> How we read props in child component
+               -> 1st way
+               const About=(props)=>{
+                   props.heading
+                   props.category
+               }
+               -> 2nd way (prefer)
+               const About=({heading,category}=>{
+
+               })
+
+      -> state : are used to manage data within a component. We can change the state values as per the requirement.
+        When state data is updated it automatically re-render in the dom without referesh.
+          -> useState hook : to define state in function component
+            import {useState} from 'react';
+            const [count, setCount]=useState(0);
+              -> count : name of the state
+              -> setCount : is a method to update state
+
+              -> How we read
+                 {count}
+              -> How we update
+                 setCount(val=> val+=1)
+   -> Next Session
+      -> Styles
+      -> Integration of bootstrap
+      -> ** Routing (SPA)
+
+   -> How we apply styles in react js
+      -> Inline styles
+        <p style={{color:'red'}}> jshdjas </p>
+      -> Call class : we call class with className
+        <div className="container">
+         --
+        </div>
+      -> How we integrate bootstrap in React Js
+         -> 1st way
+            -> link cdn files (css and js file) in index.html
+         -> 2nd way
+            npm i bootstrap --save
+         -> index.js
+            import "bootstrap/dist/css/bootstrap.min.css";
+            import "bootstrap/dist/js/bootstrap.bundle"
+
+      -> *** Routing : It is a process to navigate one route to another within a single page.With the help of routing we can create SPA (Single Page Application)
+         -> for routing we have React Router Package (V6)
+              npm i react-router-dom --save
+            -> In React Router we have some inbuild components
+               -> BrowserRouter : It is a top label component. Which is all at the starting.
+               -> Routes : It is a container where we define all route
+               -> Route : here we define path , when a path is match with the url then a component in render in the dom
+                  eg:
+                    <Routes>
+                        <Route path="" element={<Home />}/>
+                        <Route path="about" element={<About />}/>
+                    </Routes>
+               -> Link : for hyperlink
+                  <Link to="/about"> About Us </Link>
+               -> Outlet : used to render child or nested component
+
+         -> Layout
+           Home  About Us  Counter Gallery  Contact Us
+             <section>
+               //load dynamic components
+             </section>
+         -> For not found
+           <Route path="*" element={<Notfound />}/>
+         -> Child or nested routing
+            Contact.jsx
+            import { Link, Outlet } from "react-router-dom";
+const Contact=()=>{
+    return (
+        <>
+          <h2> Contact Page</h2>
+          <table className="table">
+              <tr>
+                  <td width={200}>
+                    <ul>
+                        <li> <Link to="india"> India</Link></li>
+                        <li> <Link to="usa"> USA</Link></li>
+                        <li> <Link to="china"> China</Link></li>
+                    </ul>
+                  </td>
+                  <td>
+                      <Outlet />
+                  </td>
+              </tr>
+          </table>
+        </>
+    )
+}
+export default Contact;
+// Routes
+             <Route path="contact" element={<Contact />}>
+                         <Route path="india" element={<India />}/>
+                         <Route path="usa" element={<Usa />}/>
+                         <Route path="china" element={<China />}/>
+                    </Route>
+-> Next Session
+   -> Route Params and Query Params
+   -> Http Call
+-> Params (paremeter) : It is a process to send the data through URL
+    -> Route params : we can pass the data through URL
+            http://localhost:3000/products/mens
+
+            {path:"products/:cname" element={<Products/>}}
+         -> How we read route param
+           React Router : we have queryparam hook
+    -> Query params (query string )
+       ?key=value&key=value  (pagination , search)
+         -> to access data of the query params we have a hook useSearchParams
+
+   -> Http Call | Network call : How we consume APIs in react
+       -> fetch API
+       -> axios module (3rd party module)
+          npm i axios --save
+
+          import axios from 'axios';
+
+          const API="";
+          axios.get(API)
+          .then(res=> console.log(res.data))
+          .catch(err=> console.log(err))
