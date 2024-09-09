@@ -10,6 +10,7 @@ import India from "./components/child/India"
 import Usa from "./components/child/Usa"
 import China from "./components/child/China"
 import CategoryProducts from "./components/CategoryProducts";
+import Users from "./components/Users";
 const App=()=>{
     return(
         <main>
@@ -21,6 +22,7 @@ const App=()=>{
                     <Route path="about" element={<About />}/>
                     <Route path="counter" element={<Counter />}/>
                     <Route path="gallery" element={<Gallery />}/>
+                    <Route path="users" element={<Users />}/>
                     <Route path="category/:cname" element={<CategoryProducts />}/>
                     <Route path="contact" element={<Contact />}>
                          <Route path="india" element={<India />}/>
